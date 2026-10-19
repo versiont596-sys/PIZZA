@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf7f1">
+    <title>Checkout | Pizzeria</title>
+    <link rel="icon" href="fav.ico.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+    <header class="checkoutHeader container">
+        <a class="checkoutBrand" href="home.html"><img src="logo.png" alt="Pizzeria home"></a>
+        <a class="checkoutBack" href="ordernow.html">← Back to menu</a>
+    </header>
+    <main class="container checkoutPage">
+        <section class="returnCart">
+            <div class="checkoutIntro" data-reveal>
+                <p class="eyebrow">ONE LAST STEP</p>
+                <h1>Your order, your way.</h1>
+                <p>Check your pizzas and add your delivery details below.</p>
+            </div>
+            <div class="checkoutLayout">
+                <div class="orderSummary" data-reveal>
+                    <h2>Your order</h2>
+                    <div class="list" aria-live="polite"></div>
+                </div>
+                <section class="right" aria-labelledby="checkoutTitle" data-reveal>
+                    <p class="eyebrow">DELIVERY DETAILS</p>
+                    <h1 id="checkoutTitle">Checkout</h1>
+                    <form class="form" id="checkoutForm">
+                        <div class="group">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+                        </div>
+                        <div class="group">
+                            <label for="phoneNumber">Phone number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+                        </div>
+                        <div class="group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="group">
+                            <label for="address">Delivery address</label>
+                            <input type="text" id="address" name="address" autocomplete="street-address" required>
+                        </div>
+                        <div class="group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" autocomplete="address-level2" required>
+                        </div>
+                        <div class="group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" autocomplete="country-name" required>
+                                <option value="">Choose a country</option>
+                                <option value="Philippines">Philippines</option>
+                            </select>
+                        </div>
+                        <div class="return">
+                            <div class="row">
+                                <span>Total quantity</span>
+                                <strong class="totalQuantity">0</strong>
+                            </div>
+                            <div class="row">
+                                <span>Total</span>
+                                <strong class="totalPrice">$0.00</strong>
+                            </div>
+                        </div>
+                        <p class="checkoutStatus" role="status" aria-live="polite"></p>
+                        <button class="buttoncheckout" type="submit" disabled>Place demo order</button>
+                    </form>
+                    <p class="demoNotice">Demo checkout only. Orders and payments are not submitted.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span data-current-year>2026</span> Pizzeria. Made for sharing.</p>
+        <a href="contact.html">Need a hand? Contact us</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="checkout.js"></script>
+    <script src="site.js" defer></script>
+</body>
+</html>

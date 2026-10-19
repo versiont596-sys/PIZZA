@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freshly made pizza for dine-in, takeout and delivery. Explore the Pizzeria menu and order online.">
+    <meta name="theme-color" content="#171717">
+    <title>Pizzeria | Fresh pizza, made for sharing</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="brand.css">
+    <link rel="icon" href="fav.ico.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head> 
+<body>
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Pizzeria Logo">
+            </div>
+            <ul aria-label="Main navigation">
+                <li><a href="home.html" aria-current="page">Home</a></li>
+                <li><a href="ordernow.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="ordernow.html" class="nav-cta">Order Now</a>
+
+        </nav>
+
+        <div class="content" data-reveal>
+            <p class="eyebrow">FRESH FROM OUR OVEN</p>
+            <h1>Pizzeria</h1>
+            <p>From timeless classics to bold new favorites, find your perfect slice and make tonight delicious.</p>
+            <div class="hero-actions">
+                <a href="ordernow.html" class="btn">Explore the menu</a>
+                <a href="about.html" class="text-link">Discover our services</a>
+            </div>
+        </div>
+
+        <div class="main-img">
+            <img src="pizzah.png" alt="Delicious Pizza">
+        </div>
+    </div>
+    <main>
+        <section class="home-story" aria-labelledby="storyTitle">
+            <div class="story-image" data-reveal>
+                <img src="images/2.webp" alt="Freshly baked pepperoni pizza">
+                <span class="image-note">A little joy in every slice</span>
+            </div>
+            <div class="story-copy" data-reveal>
+                <p class="section-kicker">MADE FOR YOUR MOMENTS</p>
+                <h2 id="storyTitle">The best nights begin around a pizza.</h2>
+                <p>Bring everyone to the table with a favorite from our menu. Whether it is a quiet night in or a full house, there is always room for one more slice.</p>
+                <a class="story-link" href="ordernow.html">Find your favorite <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+        <section class="home-menu-callout" data-reveal>
+            <p class="section-kicker">YOUR NEXT FAVORITE IS WAITING</p>
+            <h2>Good food. Good company. Great pizza.</h2>
+            <a class="brand-cta" href="ordernow.html">Explore the menu</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span data-current-year>2026</span> Pizzeria. Made for sharing.</p>
+        <a href="contact.html">Questions? Get in touch</a>
+    </footer>
+    <script src="site.js" defer></script>
+</body>
+</html>

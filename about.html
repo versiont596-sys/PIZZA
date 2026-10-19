@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Pizzeria's dine-in, takeaway, delivery and online ordering options.">
+    <meta name="theme-color" content="#171717">
+    <title>Our Experience | Pizzeria</title>
+    <link rel="icon" href="fav.ico.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+    <main class="hero">
+        <video autoplay loop muted playsinline class="pizzavid" aria-hidden="true">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+        <nav aria-label="Main navigation">
+            <a class="logo" href="home.html"><img src="logo.png" alt="Pizzeria home"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="ordernow.html">Menu</a></li>
+                <li><a href="about.html" aria-current="page">Our experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a class="nav-cta" href="ordernow.html">Order Now</a>
+        </nav>
+
+        <section class="container services-page" aria-labelledby="servicesTitle">
+            <header class="services-intro" data-reveal>
+                <p class="section-kicker">A BETTER WAY TO ENJOY PIZZA</p>
+                <h1 id="servicesTitle">Made for every kind of gathering.</h1>
+                <p>Make yourself at home, take your favorites to go, or let us bring dinner to your door.</p>
+            </header>
+            <div class="all-services">
+                <article class="service" data-reveal>
+                    <span class="service-number">01</span>
+                    <img src="dine.png" alt="" aria-hidden="true">
+                    <h2 class="title">Dine in</h2>
+                    <p class="subcontent">Settle in, take your time, and share a fresh slice around the table.</p>
+                </article>
+                <article class="service" data-reveal>
+                    <span class="service-number">02</span>
+                    <img src="takeout.png" alt="" aria-hidden="true">
+                    <h2 class="title">Takeaway</h2>
+                    <p class="subcontent">Pick up your favorites and take pizza night wherever you are.</p>
+                </article>
+                <article class="service" data-reveal>
+                    <span class="service-number">03</span>
+                    <img src="deliver.png" alt="" aria-hidden="true">
+                    <h2 class="title">Delivery</h2>
+                    <p class="subcontent">Enjoy a cozy night in with your favorite pizza at your door.</p>
+                </article>
+                <article class="service" data-reveal>
+                    <span class="service-number">04</span>
+                    <img src="order.png" alt="" aria-hidden="true">
+                    <h2 class="title">Order online</h2>
+                    <p class="subcontent">Browse the menu and build your order in just a few simple steps.</p>
+                </article>
+            </div>
+            <div class="services-cta" data-reveal>
+                <p>Whatever the occasion, there is always room for one more slice.</p>
+                <a class="brand-cta" href="ordernow.html">Browse our menu <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span data-current-year>2026</span> Pizzeria. Made for sharing.</p>
+        <a href="contact.html">Questions? Get in touch</a>
+    </footer>
+    <script src="site.js" defer></script>
+</body>
+</html>

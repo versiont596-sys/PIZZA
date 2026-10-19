@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171717">
+    <title>Order | Pizzeria</title>
+    <link rel="icon" href="fav.ico.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body class="storefront">
+    <div class="container">
+        <header class="siteHeader">
+            <a class="brand" href="home.html"><img src="logo.png" alt="Pizzeria home"></a>
+            <nav aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="ordernow.html" aria-current="page">Menu</a>
+                <a href="about.html">Our experience</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="iconCart" type="button" aria-label="Open shopping cart" aria-expanded="false" aria-controls="shoppingCart">
+                <img src="cart1.png" alt="">
+                <span class="totalQuantity" aria-live="polite">0</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="menuIntro" data-reveal>
+                <p class="eyebrow">THE PIZZERIA MENU</p>
+                <h1>Find your new favorite</h1>
+                <p>Made for sharing, delivered with a little extra love.</p>
+            </section>
+            <div class="menuControls" data-reveal>
+                <label class="searchBox">
+                    <span class="visuallyHidden">Search pizzas</span>
+                    <input id="productSearch" type="search" placeholder="Search the menu..." autocomplete="off">
+                </label>
+                <label class="sortBox">
+                    <span>Sort:</span>
+                    <select id="productSort" aria-label="Sort pizzas">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </label>
+            </div>
+            <p class="menuCount" aria-live="polite"></p>
+            <section class="listProduct" aria-label="Pizzas"></section>
+        </main>
+        <p class="cartStatus" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="cartBackdrop" aria-hidden="true"></div>
+    <aside class="cart" id="shoppingCart" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cartHeader">
+            <h2>Your cart</h2>
+            <button class="close" type="button" aria-label="Close shopping cart">×</button>
+        </div>
+        <p class="cartEmpty">Your cart is empty. Add a pizza to get started.</p>
+        <div class="listCart"></div>
+        <div class="cartFooter">
+            <div class="cartSummary"><span>Subtotal</span><strong class="cartTotal">$0.00</strong></div>
+            <a class="checkoutLink" href="checkout.html">Continue to checkout</a>
+        </div>
+    </aside>
+    <section class="cartToast" aria-label="Cart updated" aria-hidden="true" inert>
+        <img class="cartToastImage" src="" alt="">
+        <div class="cartToastContent">
+            <p class="cartToastEyebrow">ADDED TO YOUR CART</p>
+            <h2 class="cartToastName"></h2>
+            <p class="cartToastQuantity"></p>
+            <div class="cartToastTotal">
+                <span>Cart total</span>
+                <strong></strong>
+            </div>
+            <button class="cartToastView" type="button">View cart</button>
+        </div>
+        <button class="cartToastClose" type="button" aria-label="Dismiss cart update">×</button>
+    </section>
+    <footer class="site-footer">
+        <p>© <span data-current-year>2026</span> Pizzeria. Made for sharing.</p>
+        <a href="contact.html">Questions? Get in touch</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="site.js" defer></script>
+</body>
+</html>

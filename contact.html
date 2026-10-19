@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with Pizzeria. We would love to hear from you.">
+    <title>Contact Us | Pizzeria</title>
+    <link rel="icon" href="fav.ico.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a class="logo" href="home.html"><img src="logo.png" alt="Pizzeria home"></a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">Our experience</a></li>
+            <li><a href="ordernow.html">Menu</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="ordernow.html">Order Now</a>
+    </nav>
+    <main>
+        <header class="intro" data-reveal>
+            <p class="section-kicker">WE'RE HERE TO HELP</p>
+            <h1>Let's talk pizza.</h1>
+            <p>Questions, feedback, or just want to say hello? Send us a note.</p>
+        </header>
+        <div class="contact-layout">
+            <form method="POST" action="https://api.web3forms.com/submit" data-reveal>
+                <input type="hidden" name="access_key" value="7e12573a-c512-450d-a9e0-dc82297b0438">
+                <input type="hidden" name="subject" value="New Pizzeria contact message">
+                <div class="field">
+                    <label for="firstname">First name</label>
+                    <input id="firstname" name="name" type="text" autocomplete="given-name" placeholder="First name" required>
+                </div>
+                <div class="field">
+                    <label for="lastname">Last name</label>
+                    <input id="lastname" name="lastname" type="text" autocomplete="family-name" placeholder="Last name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone number">
+                </div>
+                <div class="field full">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                </div>
+                <div class="field full">
+                    <button type="submit">Send message</button>
+                </div>
+            </form>
+            <section class="map" aria-label="Find us" data-reveal>
+                <h2>Find us in Cebu</h2>
+                <p>Come by and make yourself at home.</p>
+                <iframe title="Map showing Cebu I.T. Park" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15700.84577225918!2d123.9055626!3d10.3249566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99921dc1502cd%3A0x14da459df63f6995!2sCebu%20I.T.%20Park!5e0!3m2!1sen!2sph!4v1729648898995!5m2!1sen!2sph" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>© <span data-current-year>2026</span> Pizzeria. Made for sharing.</p>
+        <a href="ordernow.html">Hungry? Browse the menu</a>
+    </footer>
+    <script src="site.js" defer></script>
+</body>
+</html>
