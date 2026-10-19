@@ -19,21 +19,29 @@ You can open `home.html` directly, but using a local web server is recommended s
 ### Python
 
 1. Install Python if it is not already installed.
-2. Open a terminal in this project folder (the folder containing `index.html`).
-3. Start the local server:
+2. In VS Code, open a terminal. This project is inside the `finalproject` subfolder of the downloaded workspace. If the terminal path ends in `finalproject-20261018T185204Z-1-001`, move into that subfolder:
 
    ```powershell
-   python -m http.server 8000
+   cd .\finalproject
    ```
 
-4. Open **http://localhost:8000/** in Edge or another browser. You can also go directly to **http://localhost:8000/home.html**.
+   If the terminal is already in the folder containing `index.html`, skip this command.
+3. Start the local server from the folder containing `index.html`:
+
+   ```powershell
+   py -m http.server 8000
+   ```
+
+4. Open **http://localhost:8000/** in Edge or another browser. You can also go directly to **http://localhost:8000/home.html**. Use `localhost` in the browser; do not enter `[::]`.
 5. Keep the terminal open while using the site. Press **Ctrl+C** in the terminal to stop the server.
 
-If `python` is not recognized, try:
+If `py` is not recognized, try:
 
 ```powershell
-py -m http.server 8000
+python -m http.server 8000
 ```
+
+If the browser shows a directory listing or a 404 for `home.html`, stop the server with **Ctrl+C**, change to the folder containing `index.html`, and start it again there.
 
 ## Publish with GitHub Pages
 
